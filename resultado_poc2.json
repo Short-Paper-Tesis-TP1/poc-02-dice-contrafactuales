@@ -1,0 +1,190 @@
+{
+  "poc_id": "PoC-02-DiCE",
+  "capa_4_contrafactuales": {
+    "componente": "dice_ml.Dice",
+    "method": "random",
+    "backend": "sklearn",
+    "modelo": "lightgbm.LGBMClassifier",
+    "features_to_vary": [
+      "gasto_mensual_promedio",
+      "ahorro_disponible",
+      "num_acreedores",
+      "deuda_total",
+      "cuota_mensual_total",
+      "num_creditos_ultimos_12m",
+      "usa_credito_informal",
+      "tiene_cuenta_bancaria",
+      "formalidad_negocio"
+    ],
+    "features_inmutables": [
+      "ingreso_mensual_promedio",
+      "ingreso_mes_peor",
+      "coef_variacion_ingreso",
+      "ratio_cuota_ingreso_minimo",
+      "antiguedad_negocio_meses",
+      "num_empleados",
+      "dias_atraso_max_12m",
+      "carga_familiar",
+      "nivel_educativo"
+    ],
+    "total_CFs_solicitados": 8,
+    "total_CFs_generados": 8,
+    "coherencia_variables_derivadas_ok": false,
+    "contrafactuales": [
+      {
+        "id": 1,
+        "probabilidad_original": 0.9285,
+        "probabilidad_contrafactual": 0.1558,
+        "cambios": [
+          {
+            "variable": "gasto_mensual_promedio",
+            "actual": 911.71,
+            "propuesto": 2266.82,
+            "delta": 1355.11
+          },
+          {
+            "variable": "ahorro_disponible",
+            "actual": 290.99,
+            "propuesto": 1251.01,
+            "delta": 960.02
+          }
+        ],
+        "respeta_inmutabilidad": true
+      },
+      {
+        "id": 2,
+        "probabilidad_original": 0.9285,
+        "probabilidad_contrafactual": 0.0845,
+        "cambios": [
+          {
+            "variable": "gasto_mensual_promedio",
+            "actual": 911.71,
+            "propuesto": 2363.05,
+            "delta": 1451.34
+          },
+          {
+            "variable": "ahorro_disponible",
+            "actual": 290.99,
+            "propuesto": 1310.1,
+            "delta": 1019.11
+          }
+        ],
+        "respeta_inmutabilidad": true
+      },
+      {
+        "id": 3,
+        "probabilidad_original": 0.9285,
+        "probabilidad_contrafactual": 0.2372,
+        "cambios": [
+          {
+            "variable": "ahorro_disponible",
+            "actual": 290.99,
+            "propuesto": 1421.39,
+            "delta": 1130.4
+          }
+        ],
+        "respeta_inmutabilidad": true
+      },
+      {
+        "id": 4,
+        "probabilidad_original": 0.9285,
+        "probabilidad_contrafactual": 0.3658,
+        "cambios": [
+          {
+            "variable": "ahorro_disponible",
+            "actual": 290.99,
+            "propuesto": 2229.1,
+            "delta": 1938.11
+          },
+          {
+            "variable": "usa_credito_informal",
+            "actual": 0.0,
+            "propuesto": 1.0,
+            "delta": 1.0
+          }
+        ],
+        "respeta_inmutabilidad": true
+      },
+      {
+        "id": 5,
+        "probabilidad_original": 0.9285,
+        "probabilidad_contrafactual": 0.1431,
+        "cambios": [
+          {
+            "variable": "cuota_mensual_total",
+            "actual": 1690.02,
+            "propuesto": 2471.72,
+            "delta": 781.7
+          },
+          {
+            "variable": "ahorro_disponible",
+            "actual": 290.99,
+            "propuesto": 1972.33,
+            "delta": 1681.33
+          }
+        ],
+        "respeta_inmutabilidad": true
+      },
+      {
+        "id": 6,
+        "probabilidad_original": 0.9285,
+        "probabilidad_contrafactual": 0.2453,
+        "cambios": [
+          {
+            "variable": "ahorro_disponible",
+            "actual": 290.99,
+            "propuesto": 1292.11,
+            "delta": 1001.12
+          },
+          {
+            "variable": "tiene_cuenta_bancaria",
+            "actual": 0.0,
+            "propuesto": 0.6,
+            "delta": 0.6
+          }
+        ],
+        "respeta_inmutabilidad": true
+      },
+      {
+        "id": 7,
+        "probabilidad_original": 0.9285,
+        "probabilidad_contrafactual": 0.0562,
+        "cambios": [
+          {
+            "variable": "gasto_mensual_promedio",
+            "actual": 911.71,
+            "propuesto": 3955.42,
+            "delta": 3043.71
+          },
+          {
+            "variable": "ahorro_disponible",
+            "actual": 290.99,
+            "propuesto": 2287.86,
+            "delta": 1996.87
+          }
+        ],
+        "respeta_inmutabilidad": true
+      },
+      {
+        "id": 8,
+        "probabilidad_original": 0.9285,
+        "probabilidad_contrafactual": 0.2498,
+        "cambios": [
+          {
+            "variable": "ahorro_disponible",
+            "actual": 290.99,
+            "propuesto": 1305.21,
+            "delta": 1014.21
+          },
+          {
+            "variable": "num_creditos_ultimos_12m",
+            "actual": 2.0,
+            "propuesto": 4.3,
+            "delta": 2.3
+          }
+        ],
+        "respeta_inmutabilidad": true
+      }
+    ]
+  }
+}
